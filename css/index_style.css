@@ -1,0 +1,413 @@
+body{
+  font-family: monospace;
+}
+/*Nav bar styling Strats from here*/
+
+.nav_bar_list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.nav_bar_list  li {
+  float: left;
+}
+
+.nav_bar_list a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav_bar_list a:hover{
+  background-color: #111;
+  color: white;
+}
+.nav_bar_list li:not(.ho){
+  float: right;
+  color: black;
+}
+
+/*Nav bar styling ends*/
+
+/*Home section styling starts here*/
+
+.Home{
+  font-size: 15px;
+  margin: 25px;
+  height:90vh;
+}
+.he1{
+  padding-top: 250px;
+}
+
+.data{
+  width: 65%;
+  padding-left: 60px;
+  display: inline-block;
+  float: left;
+}
+.image1{
+  padding-top: 245px;
+  padding-left: 120px;
+  margin: inherit;
+  width: 250px;
+  height: 150px;
+  display: inline-block;
+  float: left;
+}
+
+/*Home section styling ends*/
+
+/* About styling starts here*/
+
+.About{
+  font-size: 15px;
+  margin: 25px;
+  height:85vh;
+  padding-bottom: 150px;
+}
+.About h1{
+  font-size: 120px;
+}
+
+.slider{
+	height: 100px;
+	text-align: center;
+	position: relative;
+	animation: slideColor 10s forwards infinite;
+}
+
+.caption{
+	line-height: 125px;
+	font-size: 40px;
+	color: black;
+	position: relative;
+	top: 10%;
+	transform: translateY(-50%);
+	text-shadow: 0px 5px 5px rgba(0,0,0,.25);
+	margin-left: -750px;
+}
+
+.text-box{
+	display: inline-block;
+	position: relative;
+}
+
+.text-box div{
+	display: inline-block;
+	position: absolute;
+	top: -200px;
+	transform: rotateX(-90deg);
+	opacity: 0;
+	text-shadow: 0px 5px 5px rgba(0,0,0,.25);
+	animation-timing-function: ease;
+}
+
+.text-box div:nth-child(1){
+	animation: rollDown 10s forwards infinite;
+}
+
+.text-box div:nth-child(2){
+	animation: rollDown2 10s forwards infinite;
+}
+
+.text-box div:nth-child(3){
+	animation: rollDown3 10s forwards infinite;
+}
+
+@keyframes rollDown {
+	0%{
+		top: -200px;
+		transform: rotateX(-90deg);
+	}
+	11%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	22%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	33%{
+		top: 50px;
+		transform: rotateX(30deg);
+		opacity: 0;
+	}
+}
+
+@keyframes rollDown2 {
+	33%{
+		top: -200px;
+		transform: rotateX(-90deg);
+	}
+	44%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	55%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	66%{
+		top: 50px;
+		transform: rotateX(30deg);
+		opacity: 0;
+	}
+}
+
+@keyframes rollDown3 {
+	66%{
+		top: -200px;
+		transform: rotateX(-90deg);
+	}
+	77%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	88%{
+		top: -74px;
+		transform: rotateX(0deg);
+		opacity: 1;
+	}
+	99%{
+		top: 50px;
+		transform: rotateX(30deg);
+		opacity: 0;
+	}
+}
+
+/*about section styling ends*/
+
+/* skills section styling starts here*/
+
+.skills{
+  font-size: 15px;
+  margin: 25px;
+  height:85vh;
+  padding-bottom: 150px;
+}
+.skills h1{
+  padding: 50px;
+}
+
+.sb{
+  width: 200px;
+  height: 150px;
+  float: left;
+  margin: 20px;
+  border-radius: 25px;
+  text-align: center;
+  background-color: rgb(122 231 253 / 30%);
+}
+.sb:hover{
+  width: 180px;
+  height: 140px;
+  color: #7885a3;
+  background-color:rgba(255,0,0,0);
+  border:1px solid black;
+}
+.sb:hover h1{
+  font-size: 24px;
+}
+
+/*skills section styling ends*/
+
+/* education section styling starts here*/
+.Education{
+  font-size: 15px;
+  margin: 25px;
+  height:85vh;
+  padding-bottom: 150px;
+}
+.Education h1{
+  padding: 50px;
+}
+
+.Edu_box{
+  width: 1300px;
+  height: 100px;
+  background-color: #fbe7f3  ;
+  margin: 50px;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 15px;
+}
+.Edu_box:hover{
+  width: 1350px;
+  color: #7885a3;
+  background-color:rgba(255,0,0,0);
+  border: 2px solid black;
+  height:155px;
+}
+
+
+/*education section styling ends*/
+
+/* Projects section styling starts here*/
+.Projects{
+  font-size: 15px;
+  margin: 25px;
+  height:85vh;
+  padding-bottom: 150px;
+}
+.Projects h1{
+  padding: 50px;
+}
+
+.project_box{
+  width:600px;
+  height: 350px;
+  background-color: red;
+  float: left;
+  border: 1px solid black;
+  margin: 35px;
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.project_box:hover{
+  width:650px;
+  height: 380px;
+  background-color: red;
+}
+.project_video{
+  width:450px;
+  border:none;
+  margin-left: 55px;
+  border-radius: 15px;
+  height: 200px;
+  padding: 10px;
+}
+.project_video:hover{
+  margin-left:65px;
+  width:500px;
+  height: 220px;
+}
+/*education section styling ends*/
+
+/* Experience section styling starts here*/
+.Experience{
+  font-size: 15px;
+  margin: 25px;
+  height:85vh;
+  padding-bottom: 150px;
+}
+.Experience h1{
+  padding: 50px;
+}
+
+.Exp_box{
+  width: 1300px;
+  height: 150px;
+  background-color: pink  ;
+  margin: 50px;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 15px;
+}
+.Exp_box:hover{
+  width: 1350px;
+  color: #7885a3;
+  background-color:rgba(255,0,0,0);
+  border: 2px solid black;
+  height:155px;
+}
+/*experience section styling ends*/
+
+/* Blogs section styling starts here*/
+.Blogs{
+  font-size: 15px;
+  margin: 25px;
+  height:85vh;
+  padding-bottom: 150px;
+  justify-content: center;
+}
+.Blogs h1{
+  padding: 50px;
+}
+.blog_box{
+  width: 400px;
+  height:250px;
+  background-color: rgba(244, 0, 0, 0.5);
+  margin-top: 200px;
+  margin-left: 50px;
+  border-radius: 20px;
+  float: left;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.blog_box h1{
+  color: white;
+}
+
+.blog_box p{
+  visibility: hidden;
+  display: none;
+}
+.blog_box a{
+  text-decoration: none;
+}
+
+.blog_box:hover .pa{
+  color: black;
+  font-size: 8px;
+  visibility: visible;
+  display: inline-block;
+}
+.blog_box:hover h1{
+  font-size: 19px;
+  color: red;
+}
+.blog_box:hover{
+  width: 410px;
+  height:255px;
+  background-color: #fac8f4c2;
+}
+
+/*footer styling starts here*/
+
+footer{
+  height: auto;
+  width: 98vw;
+}
+
+.f_s_boxes ul{
+  justify-content: center;
+  display: flex;
+}
+.f_s_boxes  li{
+  list-style-type: none;
+  padding: 25px;
+  display: block;
+  align-items: stretch;
+  display: inline-grid;
+  float: left;
+}
+
+.f_s_boxes a{
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+.f_s_boxes img{
+  background-color: #ffa8a8;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
